@@ -1,0 +1,14 @@
+{
+  "name": "Uncollapse News on Github",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "permissions": ["storage"],
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/", "http://github.com/"],
+      "js": ["content.js"]
+    }
+  ],
+  "run_at": "document_end"
+}
